@@ -16,12 +16,12 @@
 using namespace std;
 using namespace cv;
 
-int main()
+int main( int argc, char * * argv )
 {
     int count;
   	double area, ar;
     Mat frame, fore, img, prevImg, temp, gray, vehicle_ROI, img_temp;
-    VideoCapture cap("/Users/alien/Documents/Traffic/trafficdb/video/cctv052x2004080516x01638.avi");
+    VideoCapture cap(argv[ 1 ]);
     BackgroundSubtractorMOG2 bg(500, 25, false);
     vector<vector<Point> > contours;
     vector<Rect> cars;
