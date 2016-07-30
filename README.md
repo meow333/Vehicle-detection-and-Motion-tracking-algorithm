@@ -42,3 +42,10 @@ Background subtraction/ Frame from camera or video/ Binary image that had backgr
 Contouring and object marking/ Background subtracted binary image/ Object information (point, size, centre point, area of pixels)
 LK optical flow/ Centre point of objects as features/ Tracked object motion information (direction, motion path)
 
+USAGE
+-----
+```
+make
+
+./vhdetect <video-file-name>
+```
